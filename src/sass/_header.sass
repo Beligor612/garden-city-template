@@ -1,0 +1,28 @@
+.header
+	padding: rems(30) 0 rems(46)
+	background-color: $header-color
+	position: relative
+    z-index: 1
+	.container
+		justify-content: space-between
+		align-items: center
+		.header-menu
+			padding-right: rems(100)
+			z-index: 4
+			.menu-list
+				display: flex
+				list-style-type: none
+				.menu-list__item
+					a
+						display: block
+						margin: 0 rems(35)
+						color: $main-text-color
+						text-decoration: none
+						font-size: rems(15)
+						line-height: rems(15)
+						letter-spacing: rems(2.4)
+						font-weight: 400
+						text-transform: uppercase
+						transition: all .2s 'linear'
+						&:hover
+							color: #000

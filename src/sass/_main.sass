@@ -1,0 +1,39 @@
+.main
+	background-color: $header-color
+	padding: rems(13) 0 rems(45) 0
+	position: relative
+	z-index: 2
+	.container
+		flex-direction: row
+		position: relative
+		.main-image
+			z-index: 1
+		.main-text
+			padding: 0 rems(40) 0 rems(68)
+			.main-text__headline
+				color: $h1-color
+				margin-bottom: rems(17)
+			.main-text__descr
+				font-size: rems(21)
+				line-height: rems(37.2)
+				letter-spacing: rems(0.24)
+				margin-right: rems(116)
+				margin-bottom: rems(20)
+				color: #fff
+			.directory
+				cursor: pointer
+	.leafs_red
+		position: absolute
+		top: 78%
+		left: 0
+		z-index: 3
+	.leafs_pink
+		position: absolute
+		top: -23%
+		left: 81.85%
+		z-index: 3
+	.leafs_blue
+		position: absolute
+		top: 76%
+		left: 84.5%
+		z-index: 3

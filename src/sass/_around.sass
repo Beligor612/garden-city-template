@@ -1,0 +1,57 @@
+.around
+	padding: rems(99) 0 rems(44.77)
+	.around-content
+		text-align: center
+		.around-content-title
+			font-weight: bold
+			font-size: rems(44)
+			line-height: rems(70)
+			text-align: center
+			letter-spacing: rems(5.12)
+			text-transform: uppercase
+			margin-bottom: rems(22)
+		.around-content-descr
+			font-weight: normal
+			font-size: rems(18)
+			line-height: rems(33)
+			text-align: center
+			letter-spacing: rems(0.21)
+			margin-bottom: rems(30)
+		.around-content-follow
+			font-weight: bold
+			font-size: rems(15)
+			line-height: rems(15)
+			text-align: center
+			letter-spacing: rems(2.4)
+			text-transform: uppercase
+			color: #000
+			text-decoration: none
+			margin-bottom: rems(62)
+			display: block
+	.slider
+		.slider-card
+		.slider-card__img
+		.slick-list 
+			overflow: hidden
+			position: relative
+			width: 100%
+		.slick-arrow
+			position: absolute
+			background-color: #fff
+			border: none
+			outline: none
+			width: 54px
+			height: 74px
+			border-radius: 0 54px 54px 0
+			background: #fff url('../img/features/arrow.png') 25% 50% no-repeat
+		/* Стрелка влево */
+		.slick-arrow.slick-prev
+			top: 40%
+			left: 0
+			z-index: 1
+		/* Стрелка вправо */
+		.slick-arrow.slick-next
+			top: 40%
+			right: 0
+			transform: rotateY(180deg)
+			z-index: 1

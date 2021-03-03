@@ -1,0 +1,123 @@
+.footer
+	background-color: $footer-color
+	padding: rems(45) 0 rems(25) rems(75)
+	.container
+		flex-direction: column
+		.footer_first
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			position: relative
+			margin-bottom: rems(100)
+			&::after
+				position: absolute
+				content: ''
+				width: 112.9%
+				height: 2px
+				background-color: rgba(#91afb0,.5)
+				top: 170px
+				left: -120px
+				margin-bottom: 50px
+			.first_text
+				color: #fff
+				.first__title
+					font-weight: bold
+					font-size: rems(27)
+					line-height: rems(35)
+					letter-spacing: rems(4.32)
+					text-transform: uppercase
+					margin-bottom: rems(13)
+				.first__descr
+					font-weight: normal
+					font-size: rems(18)
+					line-height: rems(33)
+					letter-spacing: rems(0.21)
+			.first__button
+				padding: rems(17) rems(20) rems(17) 
+				color: $footer-color
+				background-color: #fff
+				border-radius: 45px
+				font-weight: bold
+				font-size: rems(15)
+				line-height: rems(15)
+				text-align: center
+				letter-spacing: rems(2.4)
+				text-transform: uppercase
+				border: none
+		.footer_second
+			display: flex
+			justify-content: space-around
+			align-items: center
+			position: relative
+			margin-bottom: 45px
+			&::after
+				position: absolute
+				content: ''
+				width: 112.9%
+				height: 2px
+				background-color: rgba(#91afb0,.5)
+				top: 250px
+				left: -120px
+			.second__logo
+				align-self: center
+			.second_menu
+				display: flex
+				justify-content: space-between
+				.menu-list
+					list-style-type: none
+					display: flex
+					flex-direction: column
+					&:first-child
+						margin-right: rems(185)
+				.menu-list__item
+					a
+						display: block
+						margin-top: rems(24)
+						color: #fff
+						text-decoration: none
+						font-weight: normal
+						font-size: rems(15)
+						line-height: rems(25)
+						letter-spacing: rems(2.4)
+						text-transform: uppercase
+						transition: all .5s
+					&:hover
+						color: #000
+			.address
+				list-style-type: none
+				display: flex
+				flex-direction: column
+				color: #fff
+				align-self: start
+				margin-top: rems(24)
+				.address__item
+					font-weight: normal
+					font-size: rems(17)
+					line-height: rems(32)
+					letter-spacing: rems(0.19)
+						
+		.footer_third
+			.third_list
+				list-style-type: none
+				display: flex
+				color: #fff
+
+				.third_list__item
+					font-weight: 400
+					font-size: rems(14)
+					line-height: rems(21)
+					letter-spacing: rems(0.98)
+					text-transform: uppercase
+					margin-right: rems(20)
+					position: relative
+					&:first-child
+						font-weight: bold
+					&::after
+						content: ''
+						width: 1.7px
+						height: 12px
+						background-color: #fff
+						position: absolute
+						top: 20%
+						left: 105%

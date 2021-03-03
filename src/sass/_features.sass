@@ -1,0 +1,57 @@
+.features
+	background-color: $features-color
+	position: relative
+	z-index: 1
+	padding: rems(92) 0 rems(120)
+	.container
+		.slider
+			.slider-card
+				width: 390px !important
+				margin: 0 rems(45/2) rems(24)
+				.slider-card__img
+					img
+						max-width: 100%
+				.slider-card__feature
+					background-color: #fff
+					border: none
+					outline: none
+					font-size: rems(13)
+					line-height: rems(14.3)
+					letter-spacing: rems(2.08)
+					text-transform: uppercase
+					font-weight: 400
+					color: $features-color-btn
+					border-radius: 30px
+					padding: rems(8) rems(15)
+					margin: rems(30) 0 rems(14)
+					cursor: pointer
+					transition: all .2s 'linear' 
+					&:hover
+						// color: black
+						transform: scale(1.2)
+				.slider-card__title
+					font-size: rems(26)
+					line-height: rems(33.4)
+					letter-spacing: rems(4.16)
+					text-transform: uppercase
+					font-weight: 700
+					margin-bottom: rems(20)
+
+
+				.slider-card__more
+					font-size: rems(15)
+					line-height: rems(15)
+					letter-spacing: rems(2.4)
+					text-transform: uppercase
+					color: #000
+					text-decoration: none
+					position: relative
+					
+					&::after
+						position: absolute
+						top: 10px
+						content: ''
+						display: block
+						width: 118px
+						height: 25px
+						background-image: url('../img/features/Wave.png')

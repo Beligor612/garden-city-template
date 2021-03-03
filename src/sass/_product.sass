@@ -1,0 +1,50 @@
+.product
+	padding: rems(54) rems(75) rems(86)
+	// border: 1px solid black
+	
+	.container
+		position: relative
+		flex-direction: row
+		height: 2300px
+		.product__title
+			font-size: rems(53)
+			line-height: rems(84.15)
+			letter-spacing: rems(7.65)
+			font-weight: 700
+			text-transform: uppercase
+			margin-top: rems(73)
+			margin-bottom: rems(144)
+			height: 85px
+			width: 283px
+		.first-column
+			perspective: 2000
+			.product__item
+				&:hover
+					// margin-top: rems(50)
+					transform: rotateY(15deg) rotateX(10deg)
+					box-shadow: 0px 0px 25px #000
+		.second-column	
+			margin-left: rems(130)
+			perspective: 2000
+			.product__item
+				&:hover
+					transform: rotateY(-15deg) rotateX(10deg)
+					box-shadow: 0px 0px 25px #000
+		.product__item
+			margin-bottom: rems(115)
+			transition: all .5s
+			cursor: pointer
+			
+		.product__item__img
+			margin: rems(40) rems(40) rems(69)
+		.product__item__title
+			font-size: rems(30)
+			line-height: rems(36)
+			letter-spacing: rems(4.8)
+			text-transform: uppercase
+	.leafs
+		align-self: center
+		position: absolute
+		top: 95%
+		right: -5.8%
+		// border: 1px solid red
